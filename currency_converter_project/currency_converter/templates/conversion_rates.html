@@ -1,0 +1,80 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Rates</title>
+</head>
+<body>
+    <h1>Conversion Rates</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for currency, rate in conversion_rates.data.items %}
+            <tr>
+                <td>{{ currency }}</td>
+                <td>{{ rate }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No conversion rates available.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> {% endcomment %}
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Rates</title>
+</head>
+<body>
+    <h1>Conversion Rates</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for currency, rate in conversion_rates.data.items %}
+            <tr>
+                <td>{{ currency }}</td>
+                <td>{{ rate }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Rates</title>
+</head>
+<body>
+    <h1>Conversion Rates</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for currency, rate in conversion_rates.items %}
+            <tr>
+                <td>{{ currency }}</td>
+                <td>{{ rate }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
